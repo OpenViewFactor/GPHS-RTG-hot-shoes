@@ -40,5 +40,3 @@ for brick in all_bricks:
     result = float(log_contents.split("[RESULT] ")[1].split("[LOG]")[0].split(':')[1])
 
     print(f"Surface-Surface View Factor:\t {result}")
-
-    breakpoint()

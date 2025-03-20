@@ -1,0 +1,47 @@
+[LOG] Solver Setting Loaded: Back Face Cull Mode	-ON
+[LOG] Solver Setting Loaded: Blocking Mode		-NAIVE
+[LOG] Solver Setting Loaded: Self-Intersection Mode	-NONE
+[LOG] Solver Setting Loaded: Numeric Method		-DAI
+[LOG] Solver Setting Loaded: Compute Backend		-CPU_N
+[LOG] Solver Setting Loaded: Floating Point Precision	-DOUBLE
+[LOG] NO Blocker BVH Output
+[LOG] NO Plain Text Matrix Output
+[LOG] NO Graphic File Output
+[LOG] Loading Meshes
+[LOG] Loading Emitting Mesh : c:\Development\OpenViewFactor\GPHS-RTG-hot-shoes\assets/bricks\GPHS_brick-row-17-ref-20.stl
+ -----------------------------------------------------------------
+ [Size]					26692 Elements
+ [Aspect Ratio]		Mean		1.022954
+ [Aspect Ratio]		Median		1.003096
+ [Aspect Ratio]		Min / Max	1.000000 / 3.801561
+ [Element Quality]	Mean		0.996089
+ [Element Quality]	Median		0.999991
+ [Element Quality]	Min/Max		0.385324 / 1.000000
+ [Skewness]		Mean		0.006039
+ [Skewness]		Median		0.000013
+ [Skewness]		Min/Max		0.000000 / 0.897431
+ -----------------------------------------------------------------
+[LOG] Loading Receiving Mesh : c:\Development\OpenViewFactor\GPHS-RTG-hot-shoes\assets/hot-shoes\left_diagonal_face-row-9-ref-50.stl
+ -----------------------------------------------------------------
+ [Size]					23001 Elements
+ [Aspect Ratio]		Mean		1.018257
+ [Aspect Ratio]		Median		1.000775
+ [Aspect Ratio]		Min / Max	1.000006 / 3.309676
+ [Element Quality]	Mean		0.996998
+ [Element Quality]	Median		0.999999
+ [Element Quality]	Min/Max		0.438159 / 1.000000
+ [Skewness]		Mean		0.004587
+ [Skewness]		Median		0.000001
+ [Skewness]		Min/Max		0.000000 / 0.853850
+ -----------------------------------------------------------------
+[LOG] NO Blocking Meshes Loaded
+[LOG] Meshes loaded in 0.112591 [s]
+[LOG] Problem Size: 613942692 Pairs
+[LOG] Applying Back-Face Cull
+[LOG] Back-Face Cull completed in 3.272692 [s]
+[LOG] Evaluating View Factors
+[LOG] Applying Double Area Integration
+[LOG] View Factors completed in 1.496053 [s]
+[LOG] Evaluating Results
+[RESULT] Surface-Surface View Factor: 1.729549312694397e-07
+[LOG] Results evaluated in 0.804759 [s]

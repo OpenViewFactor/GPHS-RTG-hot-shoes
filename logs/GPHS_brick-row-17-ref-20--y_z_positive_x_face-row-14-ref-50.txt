@@ -8,7 +8,7 @@
 [LOG] NO Plain Text Matrix Output
 [LOG] NO Graphic File Output
 [LOG] Loading Meshes
-[LOG] Loading Emitting Mesh : /home/natan/Development/OpenViewFactor/thesis-hot-shoes-study/assets/bricks/GPHS_brick-row-17-ref-20.stl
+[LOG] Loading Emitting Mesh : c:\Development\OpenViewFactor\GPHS-RTG-hot-shoes\assets/bricks\GPHS_brick-row-17-ref-20.stl
  -----------------------------------------------------------------
  [Size]					26692 Elements
  [Aspect Ratio]		Mean		1.022954
@@ -21,7 +21,7 @@
  [Skewness]		Median		0.000013
  [Skewness]		Min/Max		0.000000 / 0.897431
  -----------------------------------------------------------------
-[LOG] Loading Receiving Mesh : /home/natan/Development/OpenViewFactor/thesis-hot-shoes-study/assets/hot-shoes/y_z_positive_x_face-row-14-ref-50.stl
+[LOG] Loading Receiving Mesh : c:\Development\OpenViewFactor\GPHS-RTG-hot-shoes\assets/hot-shoes\y_z_positive_x_face-row-14-ref-50.stl
  -----------------------------------------------------------------
  [Size]					23001 Elements
  [Aspect Ratio]		Mean		1.018248
@@ -35,13 +35,13 @@
  [Skewness]		Min/Max		0.000000 / 0.853771
  -----------------------------------------------------------------
 [LOG] NO Blocking Meshes Loaded
-[LOG] Meshes loaded in 0.161332 [s]
+[LOG] Meshes loaded in 0.114063 [s]
 [LOG] Problem Size: 613942692 Pairs
 [LOG] Applying Back-Face Cull
-[LOG] Back-Face Cull completed in 2.685890 [s]
+[LOG] Back-Face Cull completed in 2.972761 [s]
 [LOG] Evaluating View Factors
 [LOG] Applying Double Area Integration
-[LOG] View Factors completed in 2.028049 [s]
+[LOG] View Factors completed in 1.254469 [s]
 [LOG] Evaluating Results
-[RESULT] Surface-Surface View Factor: 0.000000
-[LOG] Results evaluated in 1.385129 [s]
+[RESULT] Surface-Surface View Factor: 3.9770822502431726e-07
+[LOG] Results evaluated in 0.773841 [s]
