@@ -1,0 +1,6 @@
+[submodule "submodules/pyOpenViewFactor"]
+	path = submodules/pyOpenViewFactor
+	url = https://github.com/OpenViewFactor/pyOpenViewFactor.git
+[submodule "submodules/distmesh-utilities"]
+	path = submodules/distmesh-utilities
+	url = https://github.com/OpenViewFactor/distmesh-utilities.git
