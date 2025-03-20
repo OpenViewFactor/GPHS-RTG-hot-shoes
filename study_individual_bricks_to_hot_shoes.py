@@ -1,11 +1,13 @@
-import os, platform, pdb
+import os, sys, platform, pdb
 from pathlib import Path
-
-import RunOVF
 
 ovf_exe = os.path.join(os.getenv("MY_BINARY_DIR"),"ovf")
 
 current_file_dir = os.path.dirname(__file__)
+
+sys.path.append(os.path.join(current_file_dir, 'submodules/pyOpenViewFactor'))
+import RunOVF
+
 bricks_dir = os.path.join( current_file_dir , "assets/bricks" )
 shoes_dir = os.path.join( current_file_dir , "assets/hot-shoes" )
 logs_dir = os.path.join( current_file_dir , "logs" )
@@ -36,8 +38,6 @@ for brick in all_bricks:
 
     log_contents = Path(log_output_path + ".txt").read_text()
     result = float(log_contents.split("[RESULT] ")[1].split("[LOG]")[0].split(':')[1])
-
-    breakpoint()
 
     print(f"Surface-Surface View Factor:\t {result}")
 
