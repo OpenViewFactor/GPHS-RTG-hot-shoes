@@ -1,25 +1,8 @@
-rectangle: 350 x 260
+rectangle: 375 x 290
 delete white background for overall figure
 delete white background for plot area
-align legend (down to path 457) with corner of plot box and then adjust by 4 arrow movements in either direction
+align legend (down to path 458) with corner of plot box and then adjust by 4 arrow movements in either direction
 align rectangle with center of plot box and then shift down by 1 "shift-arrow"
 
 TODO LIST
 bricks-to-shoes-row-1
-bricks-to-shoes-row-2
-bricks-to-shoes-row-3
-bricks-to-shoes-row-4
-bricks-to-shoes-row-5
-bricks-to-shoes-row-6
-bricks-to-shoes-row-7
-bricks-to-shoes-row-8
-bricks-to-shoes-row-9
-bricks-to-shoes-row-10
-bricks-to-shoes-row-11
-bricks-to-shoes-row-12
-bricks-to-shoes-row-13
-bricks-to-shoes-row-14
-bricks-to-shoes-row-15
-bricks-to-shoes-row-16
-bricks-to-shoes-row-17
-bricks-to-shoes-row-18

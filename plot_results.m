@@ -34,6 +34,42 @@ marker_2 = "+";
 marker_3 = "*";
 marker_4 = "s";
 
+
+
+% THIS PART IS WEIRD BUT I WAS HAVING ISSUES WITH THE FIRST FIGURE BEING THE WRONG SIZE AND INITIALIZING THIS FIGURE HELPS
+
+i = 1;
+
+semilogy( 1:18 , results(:,i,1), "Marker", marker_1, "LineStyle", line_style, "Color", [1,0,0], "MarkerSize", marker_size, "LineWidth", line_width)
+hold on
+semilogy( 1:18 , results(:,i,2), "Marker", marker_2, "LineStyle", line_style, "Color", [1,0,1], "MarkerSize", marker_size, "LineWidth", line_width)
+semilogy( 1:18 , results(:,i,3), "Marker", marker_3, "LineStyle", line_style, "Color", [0,0,1], "MarkerSize", marker_size, "LineWidth", line_width)
+semilogy( 1:18 , results(:,i,4), "Marker", marker_4, "LineStyle", line_style, "Color", [0,1,0], "MarkerSize", marker_size, "LineWidth", line_width)
+xlabel("Brick", "Interpreter", "latex")
+ylabel("$F_{ij}$", "Interpreter", "latex")
+legend("col 1", "col 2", "col 3", "col 4", "Interpreter", "latex")
+xlim([1,18])
+xticks(1:18)
+xticklabels(["1","","3","","","6","","","9","","","12","","","15","","","18"])
+set(gca, "XTickLabelRotation", 0)
+ylim([1e-8, 1e-1])
+yticks([1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1])
+yticklabels(["1e-8", "", "1e-6", "", "1e-4", "", "1e-2", "1e-1"])
+pbaspect(plot_aspect_ratio)
+grid on
+set(gca, "FontSize", 18)
+set(gcf,'Units','centimeters')
+set(gcf,'PaperUnits','centimeters')
+set(gcf,'PaperSize',[paper_size, paper_size])
+% set(gcf,'InnerPosition',[0.5,0.5,paper_size-1,paper_size-1])
+set(gcf,'OuterPosition',[0.1,0.1,paper_size-0.2,paper_size-0.2])
+set(gcf,'PaperPosition',[0,0, paper_size, paper_size])
+
+hold off
+
+
+
+
 for i = 1 : 18
   semilogy( 1:18 , results(:,i,1), "Marker", marker_1, "LineStyle", line_style, "Color", [1,0,0], "MarkerSize", marker_size, "LineWidth", line_width)
   hold on
@@ -51,14 +87,14 @@ for i = 1 : 18
   yticks([1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3, 1e-2, 1e-1])
   yticklabels(["1e-8", "", "1e-6", "", "1e-4", "", "1e-2", "1e-1"])
   pbaspect(plot_aspect_ratio)
-  grid on
   set(gca, "FontSize", 18)
+  grid on
   set(gcf,'Units','centimeters')
   set(gcf,'PaperUnits','centimeters')
   set(gcf,'PaperSize',[paper_size, paper_size])
   % set(gcf,'InnerPosition',[0.5,0.5,paper_size-1,paper_size-1])
   set(gcf,'OuterPosition',[0.1,0.1,paper_size-0.2,paper_size-0.2])
-  set(gcf,'PaperPosition',[0,0, paper_size/2, paper_size])
+  set(gcf,'PaperPosition',[0,0, paper_size, paper_size])
 
   hold off
   full_file_name = output_path + "bricks-to-shoes-row-" + num2str(i) + ".pdf";
@@ -84,13 +120,12 @@ for i = 1 : 18
   pbaspect(plot_aspect_ratio)
   set(gca, "FontSize", 18)
   grid on
-  set(gca, "FontSize", 18)
   set(gcf,'Units','centimeters')
   set(gcf,'PaperUnits','centimeters')
   set(gcf,'PaperSize',[paper_size, paper_size])
   % set(gcf,'InnerPosition',[0.5,0.5,paper_size-1,paper_size-1])
   set(gcf,'OuterPosition',[0.1,0.1,paper_size-0.2,paper_size-0.2])
-  set(gcf,'PaperPosition',[0,0, paper_size/2, paper_size])
+  set(gcf,'PaperPosition',[0,0, paper_size, paper_size])
   hold off
   full_file_name = output_path + "brick-" + num2str(i) + "-to-shoes.pdf";
   exportgraphics(gcf, full_file_name)
