@@ -25,7 +25,7 @@ end
 assets_path = "assets/bricks/";
 
 
-refinement_levels = [ 51 , 101 , 151 ];
+refinement_levels = [ 101 , 221 , 451 ];
 
 for i = 1 : 3
   

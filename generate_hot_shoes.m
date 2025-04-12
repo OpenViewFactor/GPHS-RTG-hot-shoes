@@ -1,5 +1,5 @@
-EXPORT_TOGGLE = false;
-GRAPH_TOGGLE = true;
+EXPORT_TOGGLE = true;
+GRAPH_TOGGLE = false;
 
 output_path = "assets/hot-shoes/";
 
@@ -11,9 +11,11 @@ CENTER_OFFSET = 3.01;         % [in]
 DIAG_OFFSET = [0.507, -0.21];  % [in]
 SHOE_STACK_COUNT = 18;
 
+NUM_DIVISIONS = 21;
+
 %* --------------- GENERATE HOT SHOES --------------- *%
 %! generate hot shoe face parallel to the x-z plane
-yz_positive_x_face_mesh = translateMesh( translateMesh( translateMesh( rotateMesh( generateRectangle2( SHOE_SIZE , SHOE_SIZE , 3 ) , pi/2 , 2 ) , [ CENTER_OFFSET , 0 , 0 ] ) , [ 0 , HORIZ_SPACING , 0 ] ) , [ 0 , 0 , VERT_SPACING / 2 ] );
+yz_positive_x_face_mesh = translateMesh( translateMesh( translateMesh( rotateMesh( generateRectangle2( SHOE_SIZE , SHOE_SIZE , NUM_DIVISIONS ) , pi/2 , 2 ) , [ CENTER_OFFSET , 0 , 0 ] ) , [ 0 , HORIZ_SPACING , 0 ] ) , [ 0 , 0 , VERT_SPACING / 2 ] );
 left_diagonal_face_mesh = rotateMesh( yz_positive_x_face_mesh , pi/4 , 3 );
 right_diagonal_face_mesh = flipMeshAboutPlane( left_diagonal_face_mesh , [ 0 , 0 ,0 ] , [ 1 , -1 , 0 ] ./ norm([ 1 , -1 , 0 ]) );
 xz_positive_y_face_mesh = rotateMesh( right_diagonal_face_mesh , pi/4 , 3 );
