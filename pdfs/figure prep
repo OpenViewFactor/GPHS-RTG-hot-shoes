@@ -1,8 +1,0 @@
-rectangle: 375 x 290
-delete white background for overall figure
-delete white background for plot area
-align legend (down to path 458) with corner of plot box and then adjust by 4 arrow movements in either direction
-align rectangle with center of plot box and then shift down by 1 "shift-arrow"
-
-TODO LIST
-bricks-to-shoes-row-1

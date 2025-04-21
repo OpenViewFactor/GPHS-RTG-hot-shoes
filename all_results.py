@@ -27,13 +27,13 @@ for level in all_levels:
     shoe_row = int( log.split("-")[-1][:-4] )
     shoe_face_label = ( log.split("-")[-3] ).split("_")[0]
     if shoe_face_label == "x":
-      shoe_column = 4
+      shoe_column = 1
     elif shoe_face_label == "left":
       shoe_column = 2
     elif shoe_face_label == "right":
       shoe_column = 3
     elif shoe_face_label == "y":
-      shoe_column = 1
+      shoe_column = 4
 
     log_contents = Path( os.path.join( logs_dir , level , log ) ).read_text()
     result = float(log_contents.split("[RESULT] ")[1].split("[LOG]")[0].split(':')[1])

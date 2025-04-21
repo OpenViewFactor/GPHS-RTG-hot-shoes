@@ -1,6 +1,8 @@
 EXPORT_TOGGLE = true;
 GRAPH_TOGGLE = false;
 
+addpath("submodules/distmesh-utilities/")
+
 output_path = "assets/hot-shoes/";
 
 %* --------------- SHOE PARAMETERS --------------- *%
