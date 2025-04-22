@@ -140,7 +140,7 @@ for i = 1 : 18
   set(figure(2),'Units','centimeters')
   set(figure(2),'PaperUnits','centimeters')
   set(figure(2),'PaperSize',[1.1*paper_size, paper_size])
-  full_file_name = output_path + "brick-" + num2str(i) + "-shoes.pdf";
+  full_file_name = output_path + "bricks-to-shoes-row-" + num2str(i) + ".pdf";
   pause(1.5)
   exportgraphics(figure(2), full_file_name)
   hold off
@@ -167,7 +167,7 @@ for i = 1 : 18
   set(figure(3),'Units','centimeters')
   set(figure(3),'PaperUnits','centimeters')
   set(figure(3),'PaperSize',[1.1*paper_size, paper_size])
-  full_file_name = output_path + "bricks-to-shoes-row-" + num2str(i) + ".pdf";
+  full_file_name = output_path + "brick-" + num2str(i) + "-shoes.pdf";
   pause(1.5)
   exportgraphics(figure(3), full_file_name)
   hold off
